@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro de Operadores</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .btn-full-width {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Operadores</h1>
+        <form>
+            <div class="row">
+                <div class="mb-3 col-3">
+                    <label for="codigo" class="form-label">Código:</label>
+                    <input type="text" class="form-control" id="codigo" aria-describedby="codigoHelp">
+                </div>
+                <div class="mb-3 col-3">
+                    <label for="nome" class="form-label">Nome:</label>
+                    <input type="text" class="form-control" id="nome">
+                </div>
+                <div class="mb-3 col-3">
+                    <label for="colaborador" class="form-label">Colaborador:</label>
+                    <input type="text" class="form-control" id="colaborador">
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-3">
+                    <label for="senha" class="form-label">Senha:</label>
+                    <input type="password" class="form-control" id="senha">
+                </div>
+                <div class="mb-3 col-3">
+                    <label for="confirmarSenha" class="form-label">Confirmar Senha:</label>
+                    <input type="password" class="form-control" id="confirmarSenha">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full-width">Salvar</button>
+        </form>
+        <h2>Lista de Operadores</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Código</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Colaborador</th>
+                    <th scope="col">Opções</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>001</td>
+                    <td>João</td>
+                    <td>Colaborador A</td>
+                    <td>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-primary">Editar</button>
+                            <button type="button" class="btn btn-danger">Excluir</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>002</td>
+                    <td>Maria</td>
+                    <td>Colaborador B</td>
+                    <td>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-primary">Editar</button>
+                            <button type="button" class="btn btn-danger">Excluir</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>003</td>
+                    <td>José</td>
+                    <td>Colaborador C</td>
+                    <td>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-primary">Editar</button>
+                            <button type="button" class="btn btn-danger">Excluir</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
